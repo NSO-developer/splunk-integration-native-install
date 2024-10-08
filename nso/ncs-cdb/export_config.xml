@@ -1,0 +1,16 @@
+<config xmlns="http://tail-f.com/ns/config/1.0">
+  <progress xmlns="http://tail-f.com/ns/progress">
+    <export xmlns="http://tail-f.com/ns/observability-exporter">
+      <enabled>true</enabled>
+      <otlp>
+        <host>10.5.0.5</host>
+        <port>4318</port>
+        <transport>http</transport>
+        <metrics>
+          <host>10.5.0.5</host>
+          <port>4318</port>
+        </metrics>
+      </otlp>
+    </export>
+  </progress>
+</config>

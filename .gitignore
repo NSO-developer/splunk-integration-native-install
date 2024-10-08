@@ -1,0 +1,5 @@
+nso/ncs-run/*
+nso/lux_logs/*
+run/opentelemetry-collector-contrib
+nso/packages/*
+!nso/packages/.gitkeep
