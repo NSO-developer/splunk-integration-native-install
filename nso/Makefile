@@ -4,10 +4,10 @@ FILENAME := $(shell sh curr.sh)
 
 
 deps:
-	python3.11 -m pip install --upgrade pip
-	python3.11 -m pip install --upgrade setuptools
+	python3 -m pip install --upgrade pip
+	python3 -m pip install --upgrade setuptools
 	#sudo apt-get install libpq-dev python3.11-dev python3.11-distutils libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev libjpeg-dev zlib1g-dev
-	python3.11 -m pip install -r packages/observability-exporter/src/requirements.txt
+	python3 -m pip install -r packages/observability-exporter/src/requirements.txt
 	#sudo apt-get install python3.11-dev python3.11-distutils 
 	#sudo apt-get install collectd
 
