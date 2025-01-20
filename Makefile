@@ -1,7 +1,7 @@
 all: deps nso
 
 deps:
-	-cd run; git clone git@github.com:open-telemetry/opentelemetry-collector-contrib.git
+	-cd run; git clone https://github.com/open-telemetry/opentelemetry-collector-contrib.git
 	cd nso; make deps
 
 nso:
