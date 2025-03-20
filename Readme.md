@@ -38,7 +38,7 @@ Modify the "token" and "endpoint" address in "run/otel-collector-config.yml" und
 * token - HEC token
 
 The connection between NSO and HEC Collector is setup automatically.  
-However, download the  observability-exporter than put the the observability-exporter inside nso/packages.
+However, download the  observability-exporter than put the the observability-exporter inside nso/packages after decompress from the tar.gz file.
 If you have any other package that want to run together with the example, please also copy to the same folder nso/packages. 
 
 # Usage
