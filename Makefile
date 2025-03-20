@@ -1,8 +1,13 @@
 all: deps nso
 
-deps:
-	-cd run; git clone https://github.com/open-telemetry/opentelemetry-collector-contrib.git
-	cd nso; make deps
+deps: env
+        -cd run; git clone https://github.com/open-telemetry/opentelemetry-collector-contrib.git
+        ./splunk/bin/activate ;cd nso; make deps
+
+env:
+        python3.11 -m venv splunk
+        chmod 755 splunk/bin/activate
+        splunk/bin/activate
 
 nso:
 	cd nso; make clean build
