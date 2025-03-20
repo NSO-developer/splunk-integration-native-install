@@ -45,6 +45,7 @@ If you have any other package that want to run together with the example, please
 Setup the enviorment
 ```
 make deps
+source splunk/bin/activate
 make clean all
 ```
 
