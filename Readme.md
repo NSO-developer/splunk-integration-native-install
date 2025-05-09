@@ -1,5 +1,5 @@
 # Splunk NSO Integration Example - Native Install
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/NSO-developer/splunk-integration-native-install)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/NSO-developer/splunk-integration-native-install)  
 This repository provide a Splunk integration setup example for NSO. 
 
 
