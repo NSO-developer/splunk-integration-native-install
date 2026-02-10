@@ -31,7 +31,7 @@ sudo apt-get install collectd
 	* Splunk Enterprise
 		* Local Install - https://www.splunk.com/en_us/download/splunk-enterprise.html
 		* Splunk Docker Container - https://hub.docker.com/r/splunk/splunk/
-			* or run "make splunk" to run splunk locally
+			* or run "make splunk" to run splunk in container at 10.5.0.6. If this approach is used, replace all the <Splunk IP> in the config file and this Readme with 10.5.0.6. 
 	* Splunk Cloud - https://www.splunk.com/en_us/products/splunk-cloud-platform.html
 
 # Before Start
