@@ -31,6 +31,7 @@ sudo apt-get install collectd
 	* Splunk Enterprise
 		* Local Install - https://www.splunk.com/en_us/download/splunk-enterprise.html
 		* Splunk Docker Container - https://hub.docker.com/r/splunk/splunk/
+			* or run "make splunk" to run splunk locally
 	* Splunk Cloud - https://www.splunk.com/en_us/products/splunk-cloud-platform.html
 
 # Before Start
@@ -73,10 +74,16 @@ make clean
 
 # Setup CollectD for NSO Process(ncs.smp) Monitoring
 ## CollectD Agent
-* Install CollectD via the following command or run the collectd/install.sh via sudo
+* Install CollectD via the following command
 ```
 sudo apt-get install collectd
 ```
+or run the collectd/install.sh via sudo
+```
+sudo make collectd
+```
+
+
 * Configure the CollectD in /etc/collectd/collectd.conf. Sample collectd.conf file can be found in collectd/collectd.conf. Detail can be found in Splunk Guide - https://docs.splunk.com/Documentation/AddOns/released/Linux/Configure
 	* Configure processes section to lock down the process that is going to monitor as ncs.smp
 	```

@@ -45,11 +45,11 @@ reset: clean
 
 
 
-start:
-	cd ncs-run;ncs --stop; ncs 
+start: stop
+	cd ncs-run; ncs 
 
 stop:
-	cd ncs-run; ncs --stop 
+	-cd ncs-run; ncs --stop 
 
 cli-c:
 	cd ncs-run; ncs_cli -C -u admin --noaaa ; cd ..
